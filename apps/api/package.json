@@ -1,0 +1,36 @@
+{
+  "name": "api",
+  "author": "",
+  "license": "ISC",
+  "version": "0.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "./src/exports.ts",
+  "types": "./src/exports.ts",
+  "exports": {
+    ".": {
+      "types": "./src/exports.ts",
+      "default": "./src/exports.ts"
+    }
+  },
+  "scripts": {
+    "start": "tsx src/listen.ts",
+    "typecheck": "tsc --noEmit",
+    "dev": "PORT=4000 env-cmd -f ../../.env npx nodemon"
+  },
+  "dependencies": {
+    "@fastify/cookie": "9.3.1",
+    "@fastify/cors": "9.0.1",
+    "@trpc/server": "catalog:",
+    "fastify": "4.26.1",
+    "fastify-healthcheck": "4.4.0",
+    "superjson": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.5",
+    "nodemon": "2.0.15",
+    "tsx": "4.7.0",
+    "typescript": "5.3.3"
+  }
+}

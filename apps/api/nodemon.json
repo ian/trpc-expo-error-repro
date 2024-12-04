@@ -1,0 +1,6 @@
+{
+  "watch": ["./", "../../packages"],
+  "exec": "concurrently --raw \"pnpm start\" \"pnpm jobs\"",
+  "ext": "ts",
+  "delay": "1000"
+}

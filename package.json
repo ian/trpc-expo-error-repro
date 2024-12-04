@@ -1,0 +1,36 @@
+{
+  "name": "trpc-expo-error-repro",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --raw \"pnpm --filter api run dev\" \"pnpm --filter mobile run dev\" \"pnpm --filter web run dev\""
+  },
+  "devDependencies": {
+    "@vercel/style-guide": "^6.0.0",
+    "concurrently": "^8.2.2",
+    "eas-cli": "13.2.0",
+    "env-cmd": "^10.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "tsup": "8.0.2",
+    "tsx": "4.7.1",
+    "turbo": "2.0.14"
+  },
+  "resolutions": {
+    "string-width": "4.2.3",
+    "wrap-ansi": "7.0.0"
+  },
+  "engines": {
+    "pnpm": "^9"
+  },
+  "packageManager": "pnpm@9.7.1",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/*",
+        "expo-modules-*",
+        "typescript"
+      ]
+    }
+  }
+}
